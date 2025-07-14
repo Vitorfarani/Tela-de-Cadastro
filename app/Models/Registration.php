@@ -14,6 +14,7 @@ class Registration extends Model
         'sexo',
         'telefone',
         'data_nascimento',
+        'cpf',
     ];
 
     protected $casts = [
