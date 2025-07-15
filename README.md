@@ -64,10 +64,10 @@ routes/
 
 2. Instale dependências PHP:
 
-    composer install
+   `composer install`
 
 3. Copie o .env.example para .env e ajuste:
-
+    ```bash
     APP_NAME="CadastroTIProderj"
     APP_URL=http://localhost
     DB_CONNECTION=mysql
@@ -77,13 +77,13 @@ routes/
     DB_USERNAME=root
     DB_PASSWORD=
 
-4. Gere a chave da aplicação:
+5. Gere a chave da aplicação:
 
-    php artisan key:generate
+    `php artisan key:generate`
 
-5. Execute migrations:
+6. Execute migrations:
 
-    php artisan migrate
+    `php artisan migrate`
 
 ---
 
