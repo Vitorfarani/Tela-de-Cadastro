@@ -21,29 +21,41 @@ Projeto de um CRUD simples de cadastro de pessoas, desenvolvido em Laravel com B
 
 app/
 ├── Http/
-│ ├── Controllers/
-│ │ └── RegistrationController.php
-│ └── Requests/
-│ └── RegistrationRequest.php
+│   ├── Controllers/
+│   │   └── RegistrationController.php
+│   └── Requests/
+│       └── RegistrationRequest.php
 ├── Models/
-│ └── Registration.php
+│   └── Registration.php
 └── Rules/
-└── CpfValido.php
+    └── CpfValido.php
 
 config/
-└── app.php (locale definido como pt_BR)
+└── app.php          (locale definido como pt_BR)
 
-resources/views/
-├── layouts/
-│ └── app.blade.php
-└── registrations/
-├── form.blade.php
-├── index.blade.php
-├── create.blade.php
-└── edit.blade.php
+database/
+└── migrations/      (contém a migration para a tabela `registrations`)
+
+resources/
+└── views/
+    ├── layouts/
+    │   └── app.blade.php
+    └── registrations/
+        ├── form.blade.php
+        ├── index.blade.php
+        ├── create.blade.php
+        └── edit.blade.php
 
 routes/
-└── web.php (Route::redirect + Route::resource)
+└── web.php          (Route::redirect + Route::resource)
+
+public/
+└── (assets compilados — se usar Vite, ficariam em `public/build`)
+
+.env                (configurações de ambiente, não versionado)
+README.md           (documentação do projeto)
+composer.json       (dependências PHP)
+package.json        (dependências JS — opcional, se usar Vite)
 
 ---
 
