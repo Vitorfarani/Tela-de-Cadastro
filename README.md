@@ -91,7 +91,7 @@ routes/
 
 1. Inicie o servidor local:
 
-    php artisan serve
+    `php artisan serve`
 
 2. Acesse no navegador http://localhost:8000 ou http://127.0.0.1:8000.
 
@@ -120,6 +120,8 @@ Feedback ao usuário: mensagens flash e estilo is-invalid nos campos.
 ## Contribuição
 
 Pull requests são bem-vindos! Para grandes mudanças, crie uma issue primeiro para discutirmos​ o escopo.
+
+---
 
 ## Licença
 
